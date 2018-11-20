@@ -15,3 +15,6 @@ PRODUCT:
     NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
 env:
   dev2
+girl:
+  name: helei
+  age: 18
