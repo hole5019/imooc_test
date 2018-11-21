@@ -14,7 +14,7 @@ PRODUCT:
   ribbon:
     NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
 env:
-  dev3
+  dev1
 girl:
   name: helei13
-  age: 50
+  age: 55
