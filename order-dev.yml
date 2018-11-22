@@ -1,6 +1,17 @@
 spring:
   application:
     name: order
+  cloud:
+    stream:
+      bindings:
+        myMessageInput:
+          destination: myStream
+          group: order
+          content-type: application/json
+        myMessageOutput:
+          destination: myStream
+          group: order
+          content-type: application/json      
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     username: root
