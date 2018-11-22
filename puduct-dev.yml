@@ -1,6 +1,6 @@
 spring:
-  application:
-    name: puduct
+#   application:
+#     name: puduct
   cloud:
     stream:
       bindings:
