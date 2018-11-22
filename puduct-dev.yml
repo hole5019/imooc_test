@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: puduct
+  cloud:
+    stream:
+      bindings:
+        myMessageInput:
+          destination: myStream
+          group: order
+          content-type: application/json
+        myMessageOutput:
+          destination: myStream
+          group: order
+          content-type: application/json      
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: anjubaoykq
+    url: jdbc:mysql://172.16.33.1:3306/testcloud?useUnicode=true&characterEncoding=UTF-8&useSSL=false
+  jpa:
+    show-sql: true
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+ #server:
+  # port: 8762
