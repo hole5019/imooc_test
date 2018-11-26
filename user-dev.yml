@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: anjubaoykq
+    #password: 123456
+    url: jdbc:mysql://172.16.33.1:3306/testcloud?useUnicode=true&characterEncoding=UTF-8&useSSL=false
+    #url: jdbc:mysql://localhost:3306/testcloud?useUnicode=true&characterEncoding=UTF-8&useSSL=false
+  jpa:
+    show-sql: true
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+  redis:
+    host: localhost
+    port: 6379
+# server:
+#   port: 8763
