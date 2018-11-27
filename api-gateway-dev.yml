@@ -1,0 +1,12 @@
+spring:
+  redis:
+    host: localhost
+    port: 6379
+zuul:
+  #全部服务忽略敏感头(全部服务都可传递cookie)
+  sensitive-headers:
+  routes:
+    myProduct:
+      path: /myProduct/**
+      serviceId: product
+    #product: /myProduct/**
